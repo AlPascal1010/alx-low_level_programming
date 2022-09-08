@@ -2,10 +2,8 @@
 
 /**
  * main - print the string in the put function
- *
- * Descripton: using the main function
- * this program prints "Programing is like building a multilingual puzzle
- * Return: 0
+ * 
+ * Return: always  0 (succes)
  */
 int main(void)
 {
