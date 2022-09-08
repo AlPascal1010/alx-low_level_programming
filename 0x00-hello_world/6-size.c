@@ -1,24 +1,22 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 /**
- * main -print the string in the put function
- *
- * Description: using the main function
- * this program prints 
- * return 0
+ * main - entry point
+ * 
+ * Return: always  0 (success)
  */
 int main(void)
 {
 	char c;
 	int i;
-	long li:
+	long li;;
 	long long lli;
 	float f;
 
-	print("size of a char: %ld byte(s)\n", sizeof(c));
-	printf("size of an int; %ld bytes(s)\n", sizeof(i));
-	printf("size of a long int; %ld bytes(s)\n", sizeof(li));
-	printf("size of a long long int; %id bytes(s)\n", sizeof(lli));
-	printf("size of a float: %ld byte(s)\n", sizeof(f));
+	printf("size of a char: %li byte(s)\n", sizeof(c));
+	printf("size of an int; %li bytes(s)\n", sizeof(i));
+	printf("size of a long int; %li bytes(s)\n", sizeof(li));
+	printf("size of a long long int; %li bytes(s)\n", sizeof(lli));
+	printf("size of a float: %li byte(s)\n", sizeof(f));
 	return (0);
 }
