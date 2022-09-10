@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Main - Entry point
+ * main - Entry point
  *
  * Return: 0 (success)
  */
@@ -11,7 +11,7 @@ int main(void)
 
 	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-		putchar(lc);
+	putchar(lc);
 	}
 	
 	putchar('\n');
