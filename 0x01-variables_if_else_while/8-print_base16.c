@@ -10,7 +10,7 @@ int main(void)
 	char b16;
 	int bn;
 
-	for (bn = 0; bn < 9; bn++)
+	for (bn = 0; bn <= 9; bn++)
 	{
 		putchar(bn);
 	}
