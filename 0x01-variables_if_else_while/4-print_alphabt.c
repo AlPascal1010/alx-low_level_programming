@@ -2,12 +2,12 @@
 /**
  * main - Entry point
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
- int main(void)
+int main(void)
 
- {
- 	char A;
+{
+	char A;
 
 	for (A = 'a'; A <= 'z'; A++)
 	{
@@ -23,4 +23,4 @@
 	putchar ('\n');
 
 	return (0);
- }
+}
