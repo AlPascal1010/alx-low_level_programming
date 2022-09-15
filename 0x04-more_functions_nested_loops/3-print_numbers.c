@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * print_numbers - functionthat prints all numvers from 0 to 9
+ * print_numvers - function that prints all the numbers from 0 to 9
  *
  * Return: Always 0
  */
 
-void print_numbers(void)
+int print_numbers(void)
 {
 	int n;
 
@@ -16,5 +16,5 @@ void print_numbers(void)
 		putchar(n);
 	}
 
-	putchar(10);
+	putchar('\n');
 }
