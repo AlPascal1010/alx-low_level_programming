@@ -1,4 +1,4 @@
-#inclide "main.h"
+#include "main.h"
 /**
  * _strncpy - c fundtion that copies a sting, including the terminating null byte, using at most an inputted number of byte. if the length of the source is less than the maximum byte number the remainder of the destination string is filled with null bytes. works identically to the standard library function 'strncpy'.
  * @dest: buffer stoing the sting copy
