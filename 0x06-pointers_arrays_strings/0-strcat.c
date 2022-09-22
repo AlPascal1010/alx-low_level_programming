@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - concatenates string pointed to by @src to the end ofvthe string pointed to by @dest
  * @dest: string that will be appended
@@ -10,7 +9,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, dest_len = 0;
+	int i = 0;
+       int dest_len = 0;
 
 	while (dest[i++])
 		dest_len++;
