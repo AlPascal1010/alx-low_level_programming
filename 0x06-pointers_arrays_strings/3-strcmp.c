@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strcmp - Function which compare two string
  * @s1: first string
@@ -17,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] == '\0' && s2[i] == '\0')
 			break;
-		else if (si[1] == '\0')
+		else if (si[i] == '\0')
 		{
 			diff = s2[i];
 			break;
