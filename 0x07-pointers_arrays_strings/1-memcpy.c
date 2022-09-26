@@ -6,6 +6,8 @@
  * @dest: A pointer to the memory area to copy @src into.
  * @src: tge source buffer to copy characters from
  * @n: the number of bytes to copy from @src
+ *
+ * Return: pointer to the copied memory block
  */
 void *_memcpy(void *dest, const void *src, size_t n)
 {
