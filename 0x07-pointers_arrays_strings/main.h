@@ -5,9 +5,9 @@
  * void prototypes()
  * int prototypes()
  * char prototypes()
+ * char: return value
+ * Return: 0
  */
-
-#include <stddef.h>
 
 int _putchar(char);
 char *_memset(char *s, char b, unsigned int n);
