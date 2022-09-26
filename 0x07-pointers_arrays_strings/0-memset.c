@@ -14,13 +14,11 @@
  * Return: pointer to the memory block
  */
 
-void *_memset(void *s, int b, size_tt n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = b;
-
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-
-	return (memory);
+	while (n)
+	{
+		s[n - 1] = b;
+	}
+	return (s);
 }
