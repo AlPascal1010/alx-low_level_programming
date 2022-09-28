@@ -23,7 +23,7 @@ int is_palindrome(char *s)
  *
  * Return: void
  */
-void check(char *s, int start, int end, int flag)
+int check(char *s, int start, int end, int *flag)
 {
 	if (start <= end)
 	{
