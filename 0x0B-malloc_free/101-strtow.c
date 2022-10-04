@@ -16,7 +16,7 @@ int wordnos(char *s)
 	for (c = 0; s[c] != '\0'; c++)
 	{
 		if (s[c] == ' ')
-			flag == 0;
+			flag = 0;
 		else if (flag == 0)
 		{
 			flag = 1;
@@ -43,7 +43,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sixeof(char *) * (words + 1));
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
 		return (NULL);
 
@@ -68,7 +68,7 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-	matrix[k] - NULL;
+	matrix[k] = NULL;
 
 	return (matrix);
 }
