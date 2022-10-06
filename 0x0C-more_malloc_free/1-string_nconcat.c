@@ -1,7 +1,8 @@
 #include <stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 /**
- * _strlen - calcu;ate and return string length
+ * _strlen - calculate and return string length
  * @string: string to check
  * Return: string length
  */
@@ -34,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (num < 0)
 		return (NULL);
 	if (num >= _strlen(s2))
-		num = _strlrn(s2);
+		num = _strlen(s2);
 
 	len = _strlen(s1) + num + 1;
 
