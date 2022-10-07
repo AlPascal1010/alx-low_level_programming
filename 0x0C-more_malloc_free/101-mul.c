@@ -1,4 +1,6 @@
+#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - multiplies two positive numbers
@@ -28,6 +30,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	mul = atoi(argv[1]) * atoi(argv[2]);
-	printf("%lu\n", m);
+	printf("%lu\n", mul);
 	return (0);
 }
