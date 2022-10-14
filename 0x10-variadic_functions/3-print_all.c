@@ -1,4 +1,4 @@
-#include "variadic_fuctions.h"
+#include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
 
@@ -18,9 +18,10 @@ void print_all(const char * const format, ...)
 
 	separator = "";
 
+
 	while (format && format[i])
 	{
-		switch (format)
+		switch (format[i])
 		{
 			case 'c':
 				printf("%s%c", separator, va_arg(args, int));
