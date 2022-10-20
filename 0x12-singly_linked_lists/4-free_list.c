@@ -1,9 +1,11 @@
 #include "lists.h"
+
 /**
- * free_lsit - frees a list
+ * free_list - frees a list
  * @head: head of the linked list
  * Return: no return
  */
+
 void free_list(list_t *head)
 {
 	list_t *current_node;
