@@ -12,18 +12,18 @@ void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
-		dprint(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprint(STDERR_FILENO, "Error: can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: can't write to %s\n", argv[2]);
 		exit(99);
 	}
 }
 
 /**
- * main - chck the code for holberton school students
+ * main - check the code for holberton school students
  * @argc: number of arguments
  * @argv: arguments vectors
  * Return: Always 0
@@ -32,15 +32,13 @@ int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
 	ssize_t nchars, nwr;
-	char buff[1024];
+	char buf[1024];
 
 	if (argc != 3)
 	{
-		dprint(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
-
-	file_from = open(argv[1], O_RDONLY);
 
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
@@ -60,14 +58,14 @@ int main(int argc, char *argv[])
 	err_close = close(file_from);
 	if (err_close == -1)
 	{
-		dprint(STDERR_FILENO, "Error: can't close fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", file_from);
 		exit(100);
 	}
 
-	err_close == close(file_to);
+	err_close = close(file_to);
 	if (err_close == -1)
 	{
-		dprint(STDERR_FILENO, "error: can't clos fd %d\n", file_from);
+		dprintf(STDERR_FILENO, "error: can't clos fd %d\n", file_from);
 		exit(100);
 	}
 	return (0);
