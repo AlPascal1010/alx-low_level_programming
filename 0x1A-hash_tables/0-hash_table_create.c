@@ -7,12 +7,12 @@
  * Return: I an error occur - NULL
  * otherwise -va pointer to the new hash table.
  */
-hash_tables_t *hash_tables_create(unsigned long int size)
+hash_table_t *hash_tables_create(unsigned long int size)
 {
-	hash_tables_t *ht;
+	hash_table_t *ht;
 	unsigned long int i;
 
-	ht = malloc(sieof(hash_table_t));
+	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
 		return (NULL);
 
