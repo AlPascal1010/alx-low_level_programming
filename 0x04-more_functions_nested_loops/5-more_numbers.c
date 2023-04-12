@@ -1,28 +1,29 @@
+#include "holberton.h"
 #include <stdio.h>
-#include "main.h"
 
-/***
- * more_numbers - price numbers to 14
+/**
+ * more_numbers - Print numbers between 0 to 14 incl.
  *
- * Returns: returns nothing
+ * Return: Void.
  */
-
 void more_numbers(void)
 {
-	int n1;
-	int n2;
+	int i;
+	int x;
 
-	for (n1 == 0; n1 < 10; n1++)
+	for (x = 0; x < 10; x++)
 	{
-		for (n2 = 0; n2 <= 14; n2++)
+		i = 0;
+		while (i <= 14)
 		{
-			if (n2 > 9)
+			if (i >= 10)
 			{
-				putchar((n2 / 10) + '0');
+				_putchar(i / 10 + '0');
 			}
-			putchar((n % 10) + '0');
+				_putchar(i % 10 + '0');
+			i++;
 		}
-		
-		putchar(10);
+	_putchar('\n');
 	}
 }
+
