@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include "holberton.h"
+
 /**
  * rev_string - main function.
  * @s: Pointer, the string to print.

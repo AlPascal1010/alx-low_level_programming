@@ -1,17 +1,21 @@
- #include "main.h"
+#include "main.h"
 
 /**
- * _strlen - prints out the length of a string
- * @s: String
- * Return: returns length as integer
+ * _strlen - main function.
+ * @s: Pointer with the address value.
+ * Description: This function takes a pointer to an int as parameter
+ * and updates the value it points to to 98.
+ *
+ * Return: none.
  */
-
 int _strlen(char *s)
 {
-	int len = 0;
+	int i = 0;
 
-	while (*(s + len) != '\0')
-		len++;
-
-	return (len);
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
+	return (i);
 }
