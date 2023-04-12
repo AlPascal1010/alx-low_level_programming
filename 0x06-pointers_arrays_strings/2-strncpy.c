@@ -1,21 +1,30 @@
 #include "main.h"
+
 /**
- * _strncpy - c fundtion that copies a sting, including the terminating null byte.
- * @dest: buffer stoing the sting copy
- * @src: the source string
- * @n: max number of byte copied
- * Return: returns
+ * _strncpy -  function that copies a string..
+ * @src: cadena a copiar
+ * @dest: destino de la cadena.
+ * @n: number.
+ * Return: void
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[i] = src[i];
+	i = 0;
 
-	for ( ; i < n; i++)
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+	while (i < n)
+	{
 		dest[i] = '\0';
+		i++;
+	}
 
 	return (dest);
 }
