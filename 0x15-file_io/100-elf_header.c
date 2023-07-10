@@ -1,9 +1,3 @@
-#include "main.h" 
-/*
- * File: 100-elf_heder.c
- * Auth: George Pascal
- */
-
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
