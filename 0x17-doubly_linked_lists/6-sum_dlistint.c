@@ -2,15 +2,15 @@
 
 /**
  * sum_dlistint - returns the sum of all the data (n)
- * of a dlinked list
+ * of a doubly linked list
  *
- * @head: head off the list
+ * @head: head of the list
  * Return: sum of the data
  */
 int sum_dlistint(dlistint_t *head)
 {
 	int sum;
-	
+
 	sum = 0;
 
 	if (head != NULL)
